@@ -56,6 +56,14 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "proxyLocal": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"
@@ -68,6 +76,10 @@
             },
             "development": {
               "browserTarget": "proxy:build:development"
+            },
+            "proxyLocal": {
+              "browserTarget": "proxy:build:proxyLocal",
+              "proxyConfig": "src/proxy.conf.js"
             }
           },
           "defaultConfiguration": "development"
@@ -97,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "94eb5df3-6237-4cea-bb71-8a6208acca01"
   }
 }
