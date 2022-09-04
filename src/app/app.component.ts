@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'proxy';
-  private url = 'http://localhost:4200/api/things';
+  private url = 'http://localhost:4200/api/ddd';
+  //private url = 'https://api.publicapis.org/entries';
+  //private url = 'https://www.boredapi.com/api/activity';
 
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
